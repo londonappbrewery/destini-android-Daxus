@@ -4,14 +4,15 @@ import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
     // TODO: Steps 4 & 8 - Declare member variables here:
      TextView mStory;
-     TextView mTopButton;
-     TextView mBottomButton;
+    Button mTopButton;
+    Button mBottomButton;
      int mStoryIndex = 1;
 
     @Override
@@ -22,8 +23,8 @@ public class MainActivity extends Activity {
 
         // TODO: Step 5 - Wire up the 3 views from the layout to the member variables:
         mStory = (TextView) findViewById(R.id.storyTextView);
-        mTopButton = (TextView) findViewById(R.id.buttonTop);
-        mBottomButton = (TextView) findViewById(R.id.buttonBottom);
+        mTopButton = (Button) findViewById(R.id.buttonTop);
+        mBottomButton = (Button) findViewById(R.id.buttonBottom);
 
 
 
